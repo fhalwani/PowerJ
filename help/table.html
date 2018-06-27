@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title>The Table</title>
+	<meta name="GENERATOR" content="PowerJ">
+	<meta name="KEYWORDS" content="Help">
+	<link href="screen.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<p class="h1">Table of pending cases</p>
+<p>The table provides a dynamic, detailed list of pending cases that can be sorted and/or filtered by current status of each case (needs grossing, needs embedding, etc), subspecialty (Breast, Derm, GI, GU, etc), and colour code that indicates the delay encountered up to the current time.</p>
+<BR>
+<p class="h2">Table columns:</p>
+<p>The columns of the table include, in the following order from left to right, the case number, the date and time it was accessioned, the sub-specialty of the case, the status (needs grossing, needs embedding of blocks, needs microtomy, etc), the main specimen code, the number of specimens, number of blocks, number of slides (once known), the time allotted in hours to reach its current status (see below), the time that has passed in hours since the accessioning until the current time, and finally the percentage of time that has passed relative to the time alloted.</p>
+<BR>
+<p class="h2">Color Codes:</p>
+<p>Each case (row) has a color background to quickly visualize its performance status. A well-recognized colour scheme is that of traffic lights, where green indicates that a target is being met (for example, a case is being processed well within the default time frame assigned to this case type), red indicates that a target is not being met (for example, a case has spent more hours in the Histology Laboratory than what is expected), and amber indicates that the case is approaching (70% to 100%) its default time frame.</p>
+<BR>
+<p class="h2">Displaying Case Events in Details:</p>
+<p>You can review the detailed AMP events that have occured for any particular case by clicking with the mouse anywhere on its row.  This opens another window that displays all the specimens of the case, and all the AMP events for each specimen, block and slide in real-time.  <b><i>You must close this window to be able to return to the main screen.</i></b></p>
+<BR>
+<p class="h2">Table Sorting:</p>
+<p>The cases can be sorted on any column by clicking the column header of interest.  The soringt order can be toggled between ascending and descending order by clicking more than once on the column header.</p>
+<BR>
+<p class="h2">Table Filtering:</p>
+<p>You can restrict the table contents to display only a specific subset of cases by using the 3 drop-down lists in the menubar (2 in the Grossing module). See the <a HREF="menubar.html">"Menu Bar Help Page"</a> for further details.</p>
+<BR>
+<p class="h2">Formulas:</p>
+<p>Color Codes are calculated based on number of business days/hours that have passed since accession time to the current time (HrsPassed).  This is compared to the total time assigned to complete all tasks up to the case current stage (HrsAlloted).  The red color code implies a ratio of HrsPassed/HrsAlloted more than 100%, amber awhen ratio is 70-100%, otherwise, the code is Green.  For example, here are 3 specimens identical in evrything except their status:</p>
+<BR>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td width="25%"><p class="th1">Examples</p></td>
+		<td width="25%"><p class="th1">TME</p></td>
+		<td width="25%"><p class="th1">TME</p></td>
+		<td width="25%"><p class="th1">TME</p></td>
+	</tr>
+	<tr>
+		<td><p class="th2">Accession Time</p></td>
+		<td><p class="td1">Wed 3 Feb 16 13:00</p></td>
+		<td><p class="td1">Wed 3 Feb 16 13:00</p></td>
+		<td><p class="td1">Wed 3 Feb 16 13:00</p></td>
+	</tr>
+	<tr>
+		<td><p class="th2">Current Time</p></td>
+		<td><p class="td1">Tue 9 Feb 16 10:00</p></td>
+		<td><p class="td1">Tue 9 Feb 16 10:00</p></td>
+		<td><p class="td1">Tue 9 Feb 16 10:00</p></td>
+	</tr>
+	<tr>
+		<td><p class="th2">Status</p></td>
+		<td><p class="td1">Needs Gross</p></td>
+		<td><p class="td1">Needs Microtomy</p></td>
+		<td><p class="td1">Needs Diagnosis</p></td>
+	</tr>
+	<tr>
+		<td><p class="th2">Hours Alloted</p></td>
+		<td><p class="td1">72</p></td>
+		<td><p class="td1">72+30+8=110</p></td>
+		<td><p class="td1">72+30+8+4+24=138</p></td>
+	</tr>
+	<tr>
+		<td><p class="th2">Hours Passed</p></td>
+		<td><p class="td1">93</p></td>
+		<td><p class="td1">93</p></td>
+		<td><p class="td1">93</p></td>
+	</tr>
+	<tr>
+		<td><p class="th2">Percent Delay</p></td>
+		<td><p class="td1">129%</p></td>
+		<td><p class="td1">85%</p></td>
+		<td><p class="td1">67%</p></td>
+	</tr>
+	<tr>
+		<td><p class="th2">Color Code</p></td>
+		<td bgcolor="FF0000"><p class="td1">Red</p></td>
+		<td bgcolor="FFCC00"><p class="td1">Amber</p></td>
+		<td bgcolor="00FF00"><p class="td1">Green</p></td>
+	</tr>
+</table>
+<br>
+<p class="ft">
+<a href="main.html">Previous</a> | 
+<a href="index.html">TOC</a> | 
+<a href="pie.html">Next</a> 
+</p>
+</body>
+</html>
