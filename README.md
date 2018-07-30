@@ -10,5 +10,5 @@ External Libraries:
 - poi-3.17.jar
 - poi-ooxml-3.17.jar
 - poi-ooxml-schemas-3.17.jar
-- sqljdbc.jar
+- sqljdbc4.jar
 - xmlbeans-2.6.0.jar
