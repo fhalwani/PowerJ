@@ -46,9 +46,7 @@ class PJInstall extends JFrame implements ActionListener, DocumentListener,
 	private final byte TASK_MYSQL = 3;
 	private byte task = TASK_DERBY;
 	private static String path = "";
-	// private final String[] data = {"MSSQL", "CLPATHPJDB01.eorla.tohss.on.ca", "1433", "PowerJ", "PJClient", "V0wTkl!P92PY$URe34vbnRL"};
-	// private final String[] data = {"MSSQL", "CLPATHPJDB01", "1433", "PowerJ", "PJServer", "xCyaO06ma$KO25uFiF!sZrE"};
-	private final String[] data = {"mysql", "localhost", "3306", "PowerJ", "PJClient", "xCyaO06ma"};
+	private final String[] data = {"mysql", "localhost", "3306", "PowerJ", "PJClient", "password"};
 	private Connection con = null;
 	private JStringField txtServer, txtPort, txtDatabase, txtLogin;
 	private JPasswordField txtPassword;
