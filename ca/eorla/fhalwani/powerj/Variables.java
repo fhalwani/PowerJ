@@ -25,20 +25,20 @@ class Variables {
 	short[] codersFTE = {0, 0, 0, 0};
 	short pjPort = 1433;
 	short userID = 0;
-	int timerInterval = 60000;	// 1 minute in milliseconds
-	int updateInterval = 1800000;	// 30 minutes in milliseconds
+	int timerInterval = 60000;
+	int updateInterval = 1800000;
 	long lastUpdate = 0;
-	long minWorkloadDate = 0;	// May 1, 2017 = 1493611200000L
+	long minWorkloadDate = 0;
 	long nextUpdate = 0;
-	String apLogin = "";	// pathdash
-	String apPassword = "";	// wTCr_8290^
+	String apLogin = "";
+	String apPassword = "";
 	String apDatabase = "";
 	String apAddress = "";
 	String appDir = "";
 	String[] codersName = {"CAP", "W2Q", "RCP", "CPT"};
 	String pjAddress = "";
-	String pjLogin = "";	// PJClient V0wTkl!P92PY$URe34vbnRL
-	String pjPassword = "";	// PJServer xCyaO06ma$KO25uFiF!sZrE
+	String pjLogin = "";
+	String pjPassword = "";
 	
 	Variables() {
 		for (int i = 0; i < userAccess.length; i++) {
